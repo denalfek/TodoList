@@ -78,7 +78,10 @@ export default class App extends Component {
     
             return [
                 ...arr.slice(0, idx),
-                newItem,
+                {
+                    ...item,
+                    [propName]: !item[propName]
+                },
                 ...arr.slice(idx + 1),
             ];
         }        
