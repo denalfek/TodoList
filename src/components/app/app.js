@@ -107,7 +107,7 @@ export default class App extends Component {
                     onToggleDone={this.onToggleDone}
                     onToggleImportant={this.onToggleImportant} />
                 <AddItemForm
-                    addItem={this.addItem} />
+                    onItemAdded={this.addItem} />
             </div>
         );
     };
